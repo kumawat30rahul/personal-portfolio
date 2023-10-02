@@ -12,10 +12,17 @@
         0 12px 24px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: all 0.1s;
+    /* padding: 10px; */
+    /* border: 2px solid rgba(255, 255, 255, 0.295); */
 }
 
 .blurcard:hover{
     transform: scale(1.05);
     transition: all 0.1s;
+    z-index: 999;
 
+}
+
+.blur-card-title{
+    letter-spacing: 1px;
 }

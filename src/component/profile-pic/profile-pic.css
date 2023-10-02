@@ -1,0 +1,32 @@
+.profile-pic-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.my-info {
+    width: auto;
+    height: auto;
+    /* border: 2px solid yellow; */
+    padding: 10px;
+}
+
+.profile-pic-avatar {
+    width: 240px !important;
+    height: 240px !important;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.profile-pic-avatar.hovered {
+    width: 260px !important;
+    height: 260px !important;
+    transition: width 0.3s ease, height 0.3s ease;
+
+}
+
+.typography-color{
+    color: white;
+}
