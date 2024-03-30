@@ -1,19 +1,72 @@
 import { Box } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./blur-card.css";
+import { motion, AnimatePresence } from "framer-motion";
 
-const BlurCard = ({ children, height, width, title }) => {
+const BlurCard = ({
+  children,
+  height,
+  width,
+  title,
+  name,
+  onClickFun,
+  blurCardId,
+  clickedCardId,
+  setClickedCardId,
+}) => {
+  const [previewId, setPreviewId] = useState(null);
+
+  const handleBlurCardClick = () => {
+    setPreviewId(previewId ? null : blurCardId);
+    if (blurCardId === undefined) {
+      setClickedCardId((prev) => prev);
+    } else {
+      setClickedCardId(blurCardId);
+    }
+  };
   return (
-    <Box
-      className="blurcard"
-      sx={{
-        height: height,
-        width: width,
-      }}
-    >
-      <h3 className="typography-color blur-card-title">{title}</h3>
-      {children}
-    </Box>
+    // <AnimatePresence>
+    <>
+      {/* {previewId && <div className="backdrop"></div>} */}
+      <motion.div
+        layoutId={blurCardId}
+        name={name}
+        onClick={handleBlurCardClick}
+        className={`blurcard ${previewId && "preview-card"}`}
+        // className={`blurcard`}
+        style={{
+          height: height,
+          width: width,
+          zIndex: blurCardId === clickedCardId && "9999",
+        }}
+      >
+        {!previewId && (
+          <>
+            <h3 className="typography-color blur-card-title">{title}</h3>
+            {children}
+          </>
+        )}
+      </motion.div>
+      <AnimatePresence>
+        {previewId && (
+          <motion.div
+            layoutId={blurCardId}
+            name={name}
+            onClick={handleBlurCardClick}
+            className={`blurcard ${previewId && "preview-card"}`}
+            // className={`blurcard`}
+            style={{
+              height: height,
+              width: width,
+              zIndex: blurCardId === clickedCardId && "9999",
+            }}
+          >
+            <p>vbnmn bn</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+    // </AnimatePresence>
   );
 };
 

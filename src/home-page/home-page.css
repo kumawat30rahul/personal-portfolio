@@ -47,6 +47,131 @@
   opacity: 0.08;
 }
 
+.profile-pic-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.my-info {
+  width: auto;
+  height: auto;
+  /* border: 2px solid yellow; */
+  padding: 10px;
+}
+
+.profile-pic {
+  width: 240px !important;
+  height: 240px !important;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.profile-pic-avatar {
+  width: 100%;
+  height: auto;
+  /* aspect-ratio: 1/1; */
+  transform: translate(-10px, -70px) scale(1.1);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* 
+.profile-pic-avatar.hovered {
+  width: 260px !important;
+  height: 260px !important;
+  transition: width 0.3s ease, height 0.3s ease;
+
+} */
+
+.typography-color {
+  color: white;
+}
+
+.name-div {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.greeting {
+  color: lightgray;
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+  transition: all 0.2s ease-in-out;
+
+}
+
+.my-name {
+  color: lightgray;
+  font-size: 2.5rem;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.name-div:hover>.greeting,
+.name-div:hover>.my-name ,
+.name-div:hover>.description
+{
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.description{
+  font-size: 0.9rem;
+  text-align: start;
+  color: lightgray;
+  width: 70%;
+}
+
+.skills-main-wrapper{
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-start; */
+  /* gap: 15px; */
+  /* flex-wrap: wrap; */
+  padding: 10px;
+  padding-top: 25px;
+}
+
+.grid-item-skills{
+  width: 100%;
+  flex: 1;
+}
+
+.skill-icon{
+  height: 35px;
+  width: auto;
+}
+
+.contact-main-info{
+  text-align: start;
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.contact-icon{
+  height: 45px;
+  width: auto;
+  /* flex: 1; */
+}
+
+.contact-icon-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes gradientChange {
   0% {
     background-position: left;

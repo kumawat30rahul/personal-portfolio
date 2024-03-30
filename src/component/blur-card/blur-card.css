@@ -1,28 +1,49 @@
 .blurcard {
-    height: 200px;
-    width: 600px;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.0));
-    background-size: 200%;
+    /* height: 200px; */
+    /* width: 600px; */
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    /* background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.0)); */
+    /* background-size: 200%; */
     /* border: 2px solid rgba(255, 255, 255, 0.12); */
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    box-shadow:
+    /* box-shadow:
         0 4px 6px rgba(0, 0, 0, 0.2),
         0 6px 15px rgba(0, 0, 0, 0.2),
-        0 12px 24px rgba(0, 0, 0, 0.2);
+        0 12px 24px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     cursor: pointer;
-    transition: all 0.1s;
-    /* padding: 10px; */
-    /* border: 2px solid rgba(255, 255, 255, 0.295); */
+    position: relative;
+    padding: 10px;
 }
 
-.blurcard:hover{
-    transform: scale(1.05);
-    transition: all 0.1s;
-    z-index: 999;
 
-}
-
-.blur-card-title{
+.blur-card-title {
     letter-spacing: 1px;
 }
+
+
+.preview-card {
+    position: absolute;
+    width: unset !important;
+    height: unset !important;
+    top: 25px;
+    left: 25px;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+    backdrop-filter: blur(50px);
+
+}
+
+
+.backdrop {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.705);
+    transition: all 0.3s;
+}
+

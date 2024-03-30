@@ -11,6 +11,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  position: relative;
+  transition: all 0.3s;
 }
 
 code {
