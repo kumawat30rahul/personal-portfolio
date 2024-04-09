@@ -13,6 +13,7 @@ const BlurCard = ({
   blurCardId,
   clickedCardId,
   setClickedCardId,
+  secondChildren
 }) => {
   const [previewId, setPreviewId] = useState(null);
 
@@ -61,7 +62,7 @@ const BlurCard = ({
               zIndex: blurCardId === clickedCardId && "9999",
             }}
           >
-            <p>vbnmn bn</p>
+            {secondChildren}
           </motion.div>
         )}
       </AnimatePresence>

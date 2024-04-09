@@ -1,0 +1,17 @@
+.bullet-li{
+    text-align: left;
+    /* list-style-type: circle; */
+}
+
+.bullet-li::marker{
+    color: lightgray;
+    /* list-style-type: square; */
+}
+
+.bullet-ul{
+    margin-left: 1.5rem;
+}
+
+.bullet-points-container{
+    width: 100%;
+}

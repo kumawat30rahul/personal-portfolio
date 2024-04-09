@@ -1,0 +1,46 @@
+.education-info-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.education-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.education-image {
+    width: 200px;
+    height: auto;
+}
+
+.education-image-div {
+    margin-top: -50px;
+    flex: 0.3;
+    width: 100%;
+}
+
+.education-detail-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.39) !important;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.education-detail-container:hover {
+    border: 1px solid lightgray;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.edu-desc {
+    margin: 10px;
+}

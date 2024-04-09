@@ -1,0 +1,23 @@
+.name-div-personalinfo{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.about-me-section{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.personal-info-image{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}

@@ -114,21 +114,20 @@
 }
 
 .name-div:hover>.greeting,
-.name-div:hover>.my-name ,
-.name-div:hover>.description
-{
+.name-div:hover>.my-name,
+.name-div:hover>.description {
   color: white;
   transition: all 0.2s ease-in-out;
 }
 
-.description{
+.description {
   font-size: 0.9rem;
   text-align: start;
   color: lightgray;
   width: 70%;
 }
 
-.skills-main-wrapper{
+.skills-main-wrapper {
   width: 100%;
   height: 100%;
   /* display: flex;
@@ -140,17 +139,19 @@
   padding-top: 25px;
 }
 
-.grid-item-skills{
+.grid-item-skills {
   width: 100%;
   flex: 1;
 }
 
-.skill-icon{
+.skill-icon {
   height: 35px;
   width: auto;
+  transition: all 0.3s ease-in-out;
+
 }
 
-.contact-main-info{
+.contact-main-info {
   text-align: start;
   color: lightgray;
   display: flex;
@@ -160,16 +161,44 @@
   margin-top: 5px;
 }
 
-.contact-icon{
+.contact-icon {
   height: 45px;
   width: auto;
   /* flex: 1; */
+  transition: all 0.3s ease-in-out;
+
 }
 
-.contact-icon-div{
+.contact-icon-div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contact-icon:hover,.skill-icon:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.work-swiper-container{
+  height: 90%;
+  width: 100%;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slider-work{
+  overflow: hidden;
+}
+
+.swiper-image{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 @keyframes gradientChange {
